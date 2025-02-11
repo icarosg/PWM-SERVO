@@ -5,7 +5,7 @@
 #define SERVO_PIN 22 
 #define LED_B 12
 
-const uint16_t WRAP_PERIOD = 40000; // período ajustado para 50Hz (20ms)
+const uint16_t WRAP_PERIOD = 40000; // período aprox 50Hz (20ms)
 const float PWM_DIVISER = 64.0; // divisor de clock para obter 50Hz
 
 // função para configurar o módulo PWM do servo
