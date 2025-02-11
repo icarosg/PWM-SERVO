@@ -41,7 +41,7 @@ void move_servo(uint16_t pulse_width)
 
 // função para ajustar o brilho do LED
 void level_led(uint16_t pulse_width) {
-    uint16_t duty_cycle = (pulse_width * WRAP_PERIOD) / 2400; // 500-2400 para 0-100% brilho
+    uint16_t duty_cycle = (pulse_width * WRAP_PERIOD) / 20000; // 500-2400 para 0-100% brilho
     pwm_set_gpio_level(LED_B, duty_cycle);
 }
 
@@ -58,7 +58,7 @@ int main()
     level_led(2400);
     sleep_ms(5000);
 
-    printf("Movimento 90°\n");
+    printf("Movimento 90\n");
     move_servo(1470); // 90 graus
     level_led(1470);
     sleep_ms(5000);
