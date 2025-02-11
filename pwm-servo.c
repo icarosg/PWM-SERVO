@@ -58,8 +58,8 @@ int main()
     level_led(2400);
     sleep_ms(5000);
 
-    printf("Movimento 90\n");
-    move_servo(1440); // 90 graus
+    printf("Movimento 90°\n");
+    move_servo(1470); // 90 graus
     level_led(1470);
     sleep_ms(5000);
 
